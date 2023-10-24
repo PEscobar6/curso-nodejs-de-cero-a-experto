@@ -5,12 +5,20 @@ const { getUuid, getAge } = require('./plugins/index');
 // const {getUserById} = require('./js-foundation/03-callbacks');
 // const {getUserById} = require('./js-foundation/04-arrow');
 // const {getPokemonById} = require('./js-foundation/06-promises');
-const {getPokemonById} = require('./js-foundation/07-async');
+// const {getPokemonById} = require('./js-foundation/07-async');
 
-getPokemonById(4)
-    .then( ( pokemon ) => console.log({ pokemon }))
-    .catch( (err) => console.log('Pokemon no existe') )
-    .finally( (final) => console.log('finalemente'));
+const { buildLogger } = require('./plugins')
+
+
+const logger = buildLogger('app.js');
+logger.log('Hola');
+logger.error('Errorr');
+
+// getPokemonById(4)
+//     .then( ( pokemon ) => console.log({ pokemon }))
+//     .catch( (err) => console.log('Pokemon no existe') )
+//     .finally( (final) => console.log('finalemente'));
+
 
 
 

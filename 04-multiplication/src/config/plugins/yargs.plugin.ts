@@ -31,8 +31,7 @@ export const yarg = yargs(hideBin(process.argv))
         type: 'string',
         default: 'outputs',
         describe: 'Destination of the file'
-    })
-    .check((argv, options) => {
+    }).check((argv, options) => {
         if( argv.b < 1 ) throw new Error('Base must be greater than 0');
         if( argv.l < 1 ) throw new Error('Limit must be greater than 0');
         

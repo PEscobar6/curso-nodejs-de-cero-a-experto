@@ -1,4 +1,3 @@
-import { describe, expect, it, test } from '@jest/globals';
 import { CreateTable } from './create-table.use-case';
 
 describe('CreateTable', () => {

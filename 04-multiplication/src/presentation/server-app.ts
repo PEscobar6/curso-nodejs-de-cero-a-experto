@@ -20,6 +20,6 @@ export class ServerApp{
 
         ( wasSaved )
             ? console.log('File saved')
-            : console.log('File not saved');
+            : console.error('File not saved');
     }
 }

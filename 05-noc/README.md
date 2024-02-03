@@ -8,3 +8,5 @@ PORT=3000
 MAILER_EMAIL=
 MAILER_SECRET_KEY=
 ```
+3. Ejecutar el comando
+``` npm install ```

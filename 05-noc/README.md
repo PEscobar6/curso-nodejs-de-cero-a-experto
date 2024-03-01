@@ -5,6 +5,8 @@
 2. Configurar las variables de entorno
 ```
 PORT=3000
+
+MAILER_SERVICE=
 MAILER_EMAIL=
 MAILER_SECRET_KEY=
 ```
